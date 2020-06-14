@@ -166,15 +166,15 @@ if best
     semilogy(s2,t, mean(Biasbest,1),'Color',[0 0.7 0],'Linewidth', 3,'DisplayName','Empirical lower bound : Bias$^2$');
     semilogy(s2,t, mean(Varbest,1),':','Color',[0 0.7 0],'Linewidth',2.5,'DisplayName','Empirical lower bound : Variance');
 end
-title(s2,sprintf("Expectation (%d iterations) of the variance and the squared bias\n for estimation of $\\mu$  by an open multi-agent system.\n $n = %d$, $\\lambda_c =$ %1.2f and $\\lambda_r =$%1.2f",nreal,n,lci,lri),'Interpreter','Latex');
+title(s2,sprintf("Expectation (%d iterations) of the variance and the bias\n for estimation of $\\mu$  by an open multi-agent system.\n $n = %d$, $\\lambda_c =$ %1.2f and $\\lambda_r =$%1.2f",nreal,n,lci,lri),'Interpreter','Latex');
 leg2 = legend(s2,'E[Bias$^2$]','E[Variance]');
 set(leg2,'Location','northeast','Interpreter','latex','FontSize',13);
 xlabel(s2,"Time (s.)",'Interpreter','latex','FontSize',14);
 grid on;
-%%
+
 % SAVE PDF
-% set(f1,'PaperSize',[15 11]); %set the paper size to what you want  
-% print(f1,'plots/perf_mse_evol_example','-dpdf'); % then print it
-% set(f2,'PaperSize',[15 11]); %set the paper size to what you want  
-% print(f2,'plots/perf_bv_evol_example','-dpdf'); % then print it
+set(f1,'PaperSize',[15 11]); %set the paper size to what you want  
+print(f1,'plots/gossip_vs_best_mse_time','-dpdf'); % then print it
+set(f2,'PaperSize',[15 11]); %set the paper size to what you want  
+print(f2,'plots/gossip_vs_best__VB_time','-dpdf'); % then print it
 

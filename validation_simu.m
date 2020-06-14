@@ -61,4 +61,4 @@ xlim([0,nevents]);
 
 % SAVE PDF fig
 %set(f1,'PaperSize',[26 8]); %set the paper size to what you want  
-%print(f1,'plots/Gossip/th_vs_simu','-dpdf'); % then print it
+%print(f1,'plots/valid_th_vs_simu','-dpdf'); % then print it
