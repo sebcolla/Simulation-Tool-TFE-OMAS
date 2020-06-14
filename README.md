@@ -3,7 +3,7 @@ Simulation tool used during my master thesis at UCLouvain: "Data Fusion in Open 
 (Advisor: Julien Hendrickx)
 
  ## Simulation
-This repository contains a matlab simulation function of the system, the problem and different algorithms to solve it (see file `OMAS_simu.m`). The algorithm has been validated using theoreitcal results about the gossip averaging algorithm (see file `validation_simu.m`). There also is a framework for plotting the resulting performance of different simulated algorithms (see file `run_simu.m`)
+This repository contains a matlab simulation function of an open multi-agent system for a specific problem (described below) with different algorithms to solve it. This simulation tools is available in file `OMAS_simu.m`. The simulation has been validated using theoretical results about the gossip averaging algorithm (see file `validation_simu.m`). There is also a framework for plotting the resulting performance of different simulated algorithms (see file `run_simu.m`)
 
 See the content of my master thesis in order to have details about the problem, its performance limitations, the algorithms and their in-depth analysis. A synthetic statement of the problem considered is exposed below.
 
@@ -30,4 +30,6 @@ It depends on the realization ![\omega \in \Omega](https://render.githubusercont
 
  **The replacements** occur in the system according to a Poisson clock of global rate ![n\lambda_r](https://render.githubusercontent.com/render/math?math=n%5Clambda_r). The value of ![\lambda_r](https://render.githubusercontent.com/render/math?math=%5Clambda_r) therefore the individual replacement rate. A replacement corresponds to the departure of one randomly and uniformly chosen agent from the system, instantaneously followed by the arrival of a new agent into the system.
  
-
+## Contact
+Do not hesitate to contact me if you have any question or suggestion.
+I can also provide other related scripts that plot different results presented in my master thesis.
