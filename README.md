@@ -3,7 +3,7 @@ Simulation tool used during my master thesis at UCLouvain: "Data Fusion in Open 
 (Advisor: Julien Hendrickx)
 
  ## Simulation
-This repository contains a matlab simulation function of an open multi-agent system for a specific problem (described below) with different algorithms to solve it. This simulation tools is available in file `OMAS_simu.m`. The simulation has been validated using theoretical results about the gossip averaging algorithm (see file `validation_simu.m`). There is also a framework for plotting the resulting performance of different simulated algorithms (see file `run_simu.m`)
+This repository contains a matlab simulation function of an open multi-agent system for a specific problem (described below) with different algorithms to solve it. This simulation tool is available in file `OMAS_simu.m`. The simulation has been validated using theoretical results about the gossip averaging algorithm (see file `validation_simu.m`). There is also a framework for plotting the resulting performance of different simulated algorithms (see file `run_simu.m`)
 
 See the content of my master thesis in order to have details about the problem, its performance limitations, the algorithms and their in-depth analysis. A synthetic statement of the problem considered is exposed below.
 
