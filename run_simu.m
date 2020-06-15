@@ -143,7 +143,7 @@ if best
 end
 grid on;
 
-title(s1,sprintf("Expectation (%d realizations) of the mean square error (MSE)\n for estimation of $\\mu$ by an open multi-agent system.\n $n=%d$, $\\lambda_c =$ %1.2f and $\\lambda_r =$%1.2f",nreal,n,lci,lri),'Interpreter','Latex');
+title(s1,sprintf("Expectation (%d realizations) of the mean squared error (MSE)\n for estimation of $\\mu$ by an open multi-agent system.\n $n=%d$, $\\lambda_c =$ %1.2f and $\\lambda_r =$%1.2f",nreal,n,lci,lri),'Interpreter','Latex');
 leg1 = legend(s1);
 set(leg1,'Location','northeast','Interpreter','latex','FontSize',13);
 xlabel(s1,"Time (s.)",'Interpreter','latex','FontSize',14);
