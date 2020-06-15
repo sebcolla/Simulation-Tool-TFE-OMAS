@@ -10,7 +10,7 @@ However, arrivals and departures of agents may be unavoidable (such as computer 
 This master thesis establishes theoretical and empirical performance limitations for this problem in *Open Multi-Agent Systems* and presents new algorithms that solve it efficiently. The best designed algorithm reaches the performance limitations (within 1%) in most cases.
 
  ## Simulation
-This repository contains a matlab simulation function of an open multi-agent system for a specific problem (described below) with different algorithms to solve it. This simulation tool is available in file `OMAS_simu.m`. The simulation has been validated using theoretical results about the gossip averaging algorithm (see file `validation_simu.m`). There is also a framework for plotting the resulting performance of different simulated algorithms (see file `run_simu.m`)
+This repository contains a matlab simulation function of an open multi-agent system for a specific problem (described below) with different algorithms to solve it. This simulation tool is available in file `OMAS_simu.m`. The simulation has been validated using theoretical results about the gossip averaging algorithm (see file `validation_simu.m`). There are also a framework for plotting the resulting performance of different simulated algorithms (see file `run_simu.m`) and an animation for visualizing the the estimates of the agents in the system for a specific algorithm and for a specific realization of the randomness (see file `launch_anim.m`).
 
 See the content of my master thesis in order to have details about the problem, its performance limitations, the algorithms and their in-depth analysis. A synthetic statement of the problem considered is exposed below.
 
