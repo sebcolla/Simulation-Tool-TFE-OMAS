@@ -116,7 +116,7 @@ function [yevol,MSE,Bias2,Var,MSE_ext,N,t] = OMAS_simu(n,mu,sigma,lr,lc,nevents,
     %figures for ANIMATIONS
     if anim > 0
         %close all;
-        figure();
+        figAnim=figure();
         b = bar(1:n,y,'FaceColor','flat'); hold on
         title(sprintf("Open Multi-Agent system - objective: $\\mu = %1.2f $",mu),'Interpreter','latex');
         xlabel("Agents",'Interpreter','latex');
@@ -169,6 +169,9 @@ function [yevol,MSE,Bias2,Var,MSE_ext,N,t] = OMAS_simu(n,mu,sigma,lr,lc,nevents,
                     commu();      % communication protocol function
                 end
                 if anim == 2 % dynamic animation
+                    if ~ishghandle(figAnim)
+                        return
+                    end
                     y = evalMean(); % estimates updates
                     if mod(i,ceil(nt/(n))) == 0 % update color
                         b.CData(:,:) = b.CData(:,:) + 0.6*(repmat([0,0.447,0.741],n,1) - b.CData(:,:));
@@ -246,6 +249,9 @@ function [yevol,MSE,Bias2,Var,MSE_ext,N,t] = OMAS_simu(n,mu,sigma,lr,lc,nevents,
             MSE_ext(e+1) = (extav-mu)^2;
             
             if anim == 2 % dynamic animation
+                if ~ishghandle(figAnim)
+                    return
+                end
                 if mod(e,ceil(nevents/(n))) == 0
                     b.CData(:,:) = b.CData(:,:) + 0.6*(repmat([0,0.447,0.741],n,1) - b.CData(:,:));
                 end
