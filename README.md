@@ -2,7 +2,7 @@
 Simulation tool used during my master thesis at UCLouvain:\
 **Data Fusion in Open Multi-Agent Systems for Decentralized Estimation**\
 (Advisor: Julien Hendrickx)\
-[link to full text](http://hdl.handle.net/2078.1/thesis:25154) (It is still waiting for the institution to accept its release): 
+[Link to full text](http://hdl.handle.net/2078.1/thesis:25154) (It is still waiting for the institution to accept its release) 
 ### Abstract of the Master Thesis
 This master thesis designs new efficient multi-agent algorithms that operate in open systems (i.e. systems subject to arrivals and departures of agents) and that aggregate the data held by each arriving agent for allowing them to estimate some external quantities in a decentralized way. \
 Multi-Agent Systems are systems composed of independent, intelligent and interactive entities acting toward some common objective.
